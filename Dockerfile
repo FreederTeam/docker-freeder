@@ -3,12 +3,11 @@ MAINTAINER Phyks <phyks@phyks.me>
 
 # Install packages
 RUN yum update -y
-RUN yum install -y vim httpd mysql-server php php-mysql php-pdo php-xml
+RUN yum install -y vim httpd php php-pdo php-xml
 
 # Configure the database
 ADD init.sh /tmp/init.sh
 RUN chmod 775 /tmp/init.sh
-RUN service mysqld start ; ./tmp/init.sh ; service mysqld stop
 RUN rm /tmp/init.sh
 
 # apache user has UID 1000 and GID 100

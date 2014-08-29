@@ -17,7 +17,7 @@ phyks@phyks.me (or any member of the FreederTeam).
 First get the Docker image on your PC:
 ```
 $ git clone https://github.com/FreederTeam/docker-freeder.git docker-freeder
-$ docker build -t FreederTeam/Freeder docker-freeder
+$ docker build -t freederteam/freeder docker-freeder
 ```
 
 ### Get Freeder
@@ -36,7 +36,7 @@ directory in the corresponding running container. Do not forgive to map port
 ```8080``` (or anyone else) on port ```80```:
 
 ```
-$ docker run -t -i -v /path/to/Freeder:/var/www/html -p 8080:80 FreederTeam/Freeder
+$ docker run -t -i -v /path/to/Freeder:/var/www/html -p 8080:80 freederteam/freeder
 ```
 
 Now, you have access to a shell where you can do whatever you want (you have a
@@ -67,7 +67,7 @@ Command line to start Freeder container is a bit long. You can add an alias in
 your ```~/.bashrc```:
 
 ```
-alias start-freeder='docker run -t -i -v /path/to/Freeder:/var/www/html -p 8080:80 FreederTeam/Freeder'
+alias start-freeder='docker run -t -i -v /path/to/Freeder:/var/www/html -p 8080:80 freederteam/freeder'
 ```
 
 Remember to reload ```~/.bashrc``` information with ```source ~/.bashrc```.
@@ -77,5 +77,5 @@ Remember to reload ```~/.bashrc``` information with ```source ~/.bashrc```.
 You may have no need of a shell. You can change ```-t``` argument by ```-d```:
 
 ```
-alias start-freeder='docker run -d -i -v /path/to/Freeder:/var/www/html -p 8080:80 FreederTeam/Freeder'
+alias start-freeder='docker run -d -i -v /path/to/Freeder:/var/www/html -p 8080:80 freederteam/freeder'
 ```
