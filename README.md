@@ -36,7 +36,7 @@ directory in the corresponding running container. Do not forgive to map port
 ```8080``` (or anyone else) on port ```80```:
 
 ```
-$ docker run -t -i -v /path/to/Freeder:/var/www/html -p 8080:80 freederteam/freeder
+$ docker run -t -i -v /path/to/Freeder:/var/www/html/Freeder -p 8080:80 freederteam/freeder
 ```
 
 Now, you have access to a shell where you can do whatever you want (you have a
@@ -56,7 +56,7 @@ keep it open and read the next section :)
 Last step is to install Freeder. Don't worry, you will not have to do that
 next time.
 
-1. Open a web browser on [127.0.0.1:8080](http://127.0.0.1:8080)
+1. Open a web browser on [127.0.0.1:8080/Freeder](http://127.0.0.1:8080/Freeder)
 2. Follow the different steps.
 3. Once Freeder is installed, enjoy!
 
@@ -67,7 +67,7 @@ Command line to start Freeder container is a bit long. You can add an alias in
 your ```~/.bashrc```:
 
 ```
-alias start-freeder='docker run -t -i -v /path/to/Freeder:/var/www/html -p 8080:80 freederteam/freeder'
+alias start-freeder='docker run -t -i -v /path/to/Freeder:/var/www/html/Freeder -p 8080:80 freederteam/freeder'
 ```
 
 Remember to reload ```~/.bashrc``` information with ```source ~/.bashrc```.
@@ -77,5 +77,5 @@ Remember to reload ```~/.bashrc``` information with ```source ~/.bashrc```.
 You may have no need of a shell. You can change ```-t``` argument by ```-d```:
 
 ```
-alias start-freeder='docker run -d -i -v /path/to/Freeder:/var/www/html -p 8080:80 freederteam/freeder'
+alias start-freeder='docker run -d -i -v /path/to/Freeder:/var/www/html/Freeder -p 8080:80 freederteam/freeder'
 ```
