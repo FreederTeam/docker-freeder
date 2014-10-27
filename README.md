@@ -1,6 +1,6 @@
 # Dockerfile for Freeder
 
-**IMPORTANT NOTE** : This repo is to be considered as **outdated** and the images available in the Freeder repo should be used as reference instead. As of writing this, they are available under `docker/` folder in the `dev` branch of the main repo, and are used for unit testing.
+**IMPORTANT NOTE** : This repo is to be considered as **outdated** and the images available in the Freeder repo should be used as reference instead. As of writing this, they are available in the Freeedr-ci repo, and are used for unit testing.
 
 
 Based on [Dockerfile for FreshRSS](https://github.com/marienfressinaud/docker-freshrss).
